@@ -121,6 +121,41 @@
           }
         }
       }
+    },
+    "polpware-ngx-form": {
+      "root": "projects/polpware-ngx-form",
+      "sourceRoot": "projects/polpware-ngx-form/src",
+      "projectType": "library",
+      "prefix": "polp",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/polpware-ngx-form/tsconfig.lib.json",
+            "project": "projects/polpware-ngx-form/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/polpware-ngx-form/src/test.ts",
+            "tsConfig": "projects/polpware-ngx-form/tsconfig.spec.json",
+            "karmaConfig": "projects/polpware-ngx-form/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/polpware-ngx-form/tsconfig.lib.json",
+              "projects/polpware-ngx-form/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "polpware-ngx-lib-box"

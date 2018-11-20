@@ -16,6 +16,14 @@
     "lib": [
       "es2017",
       "dom"
-    ]
+    ],
+    "paths": {
+      "polpware-ngx-form": [
+        "dist/polpware-ngx-form"
+      ],
+      "polpware-ngx-form/*": [
+        "dist/polpware-ngx-form/*"
+      ]
+    }
   }
 }
