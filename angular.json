@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "polpware-ngx-form": {
+    "polpware-ngx-lib-box": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/polpware-ngx-form",
+            "outputPath": "dist/polpware-ngx-lib-box",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -50,18 +50,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "polpware-ngx-form:build"
+            "browserTarget": "polpware-ngx-lib-box:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "polpware-ngx-form:build:production"
+              "browserTarget": "polpware-ngx-lib-box:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "polpware-ngx-form:build"
+            "browserTarget": "polpware-ngx-lib-box:build"
           }
         },
         "test": {
@@ -95,7 +95,7 @@
         }
       }
     },
-    "polpware-ngx-form-e2e": {
+    "polpware-ngx-lib-box-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -103,11 +103,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "polpware-ngx-form:serve"
+            "devServerTarget": "polpware-ngx-lib-box:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "polpware-ngx-form:serve:production"
+              "devServerTarget": "polpware-ngx-lib-box:serve:production"
             }
           }
         },
@@ -123,5 +123,5 @@
       }
     }
   },
-  "defaultProject": "polpware-ngx-form"
+  "defaultProject": "polpware-ngx-lib-box"
 }
