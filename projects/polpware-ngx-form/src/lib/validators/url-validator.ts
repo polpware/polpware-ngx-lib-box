@@ -47,7 +47,7 @@ export function validateUrl(value: string, parseQuery: boolean): IInvalidSpec | 
 * Given a valid url, returns the normalized host name. 
 * The returned host name does not include www and is lowercase.
 * The returned host includes host number. 
-* @param {} string
+* {} string
 */
 export function normalizeHost(s: string) {
     // Assume that s is a valid url
